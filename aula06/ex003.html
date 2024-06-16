@@ -19,18 +19,14 @@
     Voltei direto para o React, mas me senti esquecido de tudo,  então decidi voltar e 
     revisar o JS novamente com o curso do Guanabara do Curso em Vídeo.
    </p>
-   <p>opa ${`dasd`}</p>
     <script>
-        let parte1 = window.prompt('diga um nome:')
-        let parte2 = window.prompt('uma :')
-        let parte3 = window.prompt('informe o segundo valor:')
-        
-        let resultado = numero1 + numero2;
+        //Teste de soma e transferir string em number
+        let n1 = Number(window.prompt('Digite um número:'));
+        let n2 = Number(window.prompt('Digite o segundo número para somar:'));
 
-        console.log(resultado);
+        let res = n1 + n2;
 
-        //Estava tentando fazer uma brincadeira, mas nesse dia não conseguir fazer.
-        //Deu certo no documento ex002.html é uma brincadeirinha.
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${res}`);
     </script>
 </body>
 </html>
