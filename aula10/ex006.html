@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+<style>
+    div#area {
+        font: normal 20pt Arial;
+        background: purple;
+        color: aliceblue;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+</style>
+
+</head>
+<body>
+    <div id="area">
+        Clique aqui
+    </div>
+
+<script>
+
+    const button = window.document.getElementById('area')
+
+    button.addEventListener('click', handleClick)
+    button.addEventListener('mouseenter', joinAreaTheButton)
+    button.addEventListener('mouseout', outAreaTheButton)
+
+    function handleClick() {
+        button.style.background = 'green'
+        button.innerText = 'Clicou!'
+    }
+
+    function joinAreaTheButton() {
+        button.style.background = 'blue'
+        button.innerText = 'Clica logo!'
+    }
+
+    function outAreaTheButton() {
+        button.style.background = 'red'
+        button.innerText = 'Volta!'
+    }
+</script>
+</body>
+</html>

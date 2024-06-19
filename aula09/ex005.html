@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexendo com DOM</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font: normal 18pt Arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Lidando com o DOM</h1>
+    <p>Lorem ipsum  dignissimos quod, provident </p>
+    <p>pariatur cupiditate <strong>OPA</strong> repellendus ad sunt incidunt dolorum corporis maiores ullam, saepe modi odit quam.</p>
+    <div id="button">Clique aqui.</div>
+
+    <script>
+        let teste = window.document.querySelector('div#button');
+
+        teste.style.background = 'yellow';
+        teste.style.color = 'purple';
+    </script>
+</body>
+</html>
