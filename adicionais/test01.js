@@ -26,11 +26,14 @@ console.log(cores)
 
 //Exercico 04 do dia 01
 /***********************************/
-//esse exercicio eu não entendi direito, mas tentei o que eu entendi :)
-/*function num(a, b) {
+function soma(a, b) {
     return a + b;
-    console.log(num)
-}*/
+}
+
+// Chamando a função com diferentes valores e imprimindo o resultado
+console.log(soma(2, 3));
+console.log(soma(10, 5));
+console.log(soma(-1, 1));
 
 
 
